@@ -1,0 +1,8 @@
+
+public class B extends A{
+	
+    
+	public void test(String str) {
+		System.out.println("B");
+	}
+}

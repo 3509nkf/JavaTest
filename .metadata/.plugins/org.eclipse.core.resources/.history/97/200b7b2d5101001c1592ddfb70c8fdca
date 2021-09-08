@@ -1,0 +1,7 @@
+public class Sample {
+	public  void test(Object obj) {//何型かわからない　どんな具象クラスとかわからなくても動かせる　どんなクラスでも扱えるようにする
+		
+		Class clazz = obj.getClass(); //動作している元のインスタンスのクラスを知りたい
+		System.out.println(clazz.getName());
+	}
+}

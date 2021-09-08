@@ -1,0 +1,11 @@
+import java.lang.reflect.Field;
+
+public class Main {
+	public static void main(String[] args) {
+		Class<Item> clazz = Item.class;
+		Field[] fields = clazz.getDeclaredFields();
+		for(Field f : fields) {
+			System.out.println(f.getName());
+		}
+	}
+}

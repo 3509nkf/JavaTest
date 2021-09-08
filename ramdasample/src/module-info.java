@@ -1,0 +1,3 @@
+module ramdasample {
+	exports ramdasample;
+}

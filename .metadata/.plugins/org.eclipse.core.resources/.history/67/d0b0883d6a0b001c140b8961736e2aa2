@@ -1,0 +1,13 @@
+
+public class B extends A{
+	
+//	public B() {
+//		super(); 引数なし　引数なしのすーぱクラスのコンストラクターを呼び出す。
+//	}
+	
+	
+	public void hello() {
+		System.out.println("hello");
+	}
+
+}
