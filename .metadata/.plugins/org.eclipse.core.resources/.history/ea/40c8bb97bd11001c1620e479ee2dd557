@@ -1,0 +1,22 @@
+import java.nio.file.Paths;
+import java.util.Properties;
+import java.nio.file.Path;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.io.BufferedReader;
+import java.nio.charset.StandardCharsets;
+
+public class JavaTest1 {
+	public static void main(String[] args) {
+		Path path = Paths.get("mail.properties");
+		try(BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8)) {
+			Properties properties = new Properties();
+			properties.load(reader);
+			
+			String address = properties.getProperty("system.mail.address");
+			System.out.println(address);
+		} catch (IOException ex) {
+			//—áŠOˆ—‚ÍÈ—ª
+		}
+	}
+}
