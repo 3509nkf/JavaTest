@@ -1,5 +1,4 @@
 import java.nio.file.Paths;
-import org.xml.sax.SAXException;
 
 
 
@@ -43,13 +42,13 @@ public class JavaTest1 {
 				NamedNodeMap attributes = child.getAttributes();
 				if(attributes != null) {
 					for(int index = 0; index < attributes.getLength(); index++) {
-						Node attribute = attributes.item(index);
+						Node attribute = attribute.item(index);
 						System.out.println("Attributee:");
 						printNode(attribute);
 					}
 				}
 			}
-			readRecursive(child);
+			raedRecursive(child);
 			child = child.getNextSibling();
 		}
 		

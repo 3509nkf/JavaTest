@@ -1,7 +1,4 @@
 import java.nio.file.Paths;
-import org.xml.sax.SAXException;
-
-
 
 
 
@@ -22,7 +19,6 @@ import java.io.InputStream;
 import java.lang.Exception;
 import org.w3c.dom.NamedNodeMap;
 import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.ParserConfigurationException;
 
 public class JavaTest1 {
 		
@@ -31,7 +27,7 @@ public class JavaTest1 {
 				DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 				Node root = builder.parse(is);
 				readRecursive(root);
-			} catch (ParserConfigurationException | IOException | SAXException ex) {
+			} catch (ParseConfigurationException | IOExcpetion | SAXException ex) {
 				//ó·äOèàóùÇÕè»ó™
 			}
 		}
@@ -43,13 +39,13 @@ public class JavaTest1 {
 				NamedNodeMap attributes = child.getAttributes();
 				if(attributes != null) {
 					for(int index = 0; index < attributes.getLength(); index++) {
-						Node attribute = attributes.item(index);
+						Node attribute = attribute.item(index);
 						System.out.println("Attributee:");
 						printNode(attribute);
 					}
 				}
 			}
-			readRecursive(child);
+			raedRecursive(child);
 			child = child.getNextSibling();
 		}
 		
