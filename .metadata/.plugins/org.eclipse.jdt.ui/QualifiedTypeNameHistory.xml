@@ -6,9 +6,20 @@
     <fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
     <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Node"/>
+    <fullyQualifiedTypeName name="javax.xml.parsers.SAXParser"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="javax.xml.parsers.SAXParserFactory"/>
+    <fullyQualifiedTypeName name="org.xml.sax.helpers.DefaultHandler"/>
+    <fullyQualifiedTypeName name="org.xml.sax.Attributes"/>
+    <fullyQualifiedTypeName name="javax.xml.stream.XMLInputFactory"/>
+    <fullyQualifiedTypeName name="javax.xml.stream.XMLStreamReader"/>
+    <fullyQualifiedTypeName name="javax.xml.stream.XMLStreamConstants"/>
+    <fullyQualifiedTypeName name="javax.xml.stream.events.XMLEvent"/>
+    <fullyQualifiedTypeName name="javax.xml.stream.events.StartElement"/>
+    <fullyQualifiedTypeName name="javax.xml.stream.events.Characters"/>
 </qualifiedTypeNameHistroy>

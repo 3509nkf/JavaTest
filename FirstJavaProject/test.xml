@@ -5,7 +5,7 @@
 			<firstname>Takuya</firstname>
 			<lastname>Okada</lastname>
 		</name>
-		<gender>male</gender>
-		<job>Engineer</job>
-			</staff>
+		<gender>
+		male</gender>
+		<job>Engineer</job></staff>
 </staffs>

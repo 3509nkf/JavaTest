@@ -1,4 +1,0 @@
-system.mail.address=okada@acroquest.co.jp
-system.mail.enable=true
-# メール送信エラー
-system.mail.errormessage=

@@ -1,4 +1,5 @@
 import java.nio.file.Paths;
+
 import org.xml.sax.SAXException;
 
 
@@ -23,15 +24,26 @@ import java.lang.Exception;
 import org.w3c.dom.NamedNodeMap;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 
 public class JavaTest1 {
+	
+	      public static void main(String[] args) {
+	    	   JavaTest1 xml = new JavaTest1();
+	    	   xml.parse("test.xml");
+	      }
+	   
 		
 		public void parse(String xmlFile) {
-			try(InputStream is = Files.newInputStream(Paths.get(xmlFile))) {
-				DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-				Node root = builder.parse(is);
-				readRecursive(root);
-			} catch (ParserConfigurationException | IOException | SAXException ex) {
+			try(InputStream is = Files.newInputStream(Paths.get(xmlFie))) {
+				SAXParserFactory factory = SAXParserFactory.newInstance();
+				SAXParser parser = factory.newSAXParser();
+				SampleHandler handler = new SampleHandler();
+				
+				parser.parse(is, handler);
+				parser = factory.newSAXParser();
+			} catch (ParserConfigurationException | SAXException | IOException ex) {
 				//ó·äOèàóùÇÕè»ó™
 			}
 		}
@@ -48,13 +60,17 @@ public class JavaTest1 {
 						printNode(attribute);
 					}
 				}
+				readRecursive(child);
+				child = child.getNextSibling();
 			}
-			readRecursive(child);
-			child = child.getNextSibling();
+			
 		}
 		
 		private void printNode(Node node) {
 			System.out.println(node.getNodeName() + "=" + node.getNodeValue());
 		}
+	   
 }
+
+
 	
