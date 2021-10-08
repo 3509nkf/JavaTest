@@ -1,7 +1,8 @@
 import java.util.List;
 
+
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotaion.XmlRootElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
@@ -10,7 +11,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class Staffs {
 	private List<Staff> staffList;
 	
-	@XMLElement(name = "staff")
+	@XmlElement(name = "staff")
 	public List<Staff> getStaffList() {
 		return staffList;
 	}
@@ -21,7 +22,7 @@ public class Staffs {
 	}
 	
 	@Override
-	public String toStirng() {
+	public String toString() {
 		return ToStringBuilder.reflectionToString(this);
 	}
 

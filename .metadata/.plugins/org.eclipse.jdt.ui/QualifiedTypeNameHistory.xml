@@ -18,11 +18,15 @@
     <fullyQualifiedTypeName name="javax.xml.stream.events.XMLEvent"/>
     <fullyQualifiedTypeName name="javax.xml.stream.events.StartElement"/>
     <fullyQualifiedTypeName name="javax.xml.stream.events.Characters"/>
-    <fullyQualifiedTypeName name="java.nio.file.Files"/>
-    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
     <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
     <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
     <fullyQualifiedTypeName name="javax.xml.xpath.XPathFactory"/>
     <fullyQualifiedTypeName name="javax.xml.xpath.XPath"/>
     <fullyQualifiedTypeName name="javax.xml.parsers.ParserConfigurationException"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.time.Month"/>
 </qualifiedTypeNameHistroy>
