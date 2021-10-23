@@ -1,6 +1,6 @@
 
 public class StringUtils {
-	public String isEmpty(String text) {
+	public boolean isEmpty(String text) {
 		return (text == null || text.length() == 0);
 	}
 

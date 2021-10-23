@@ -8,7 +8,7 @@ public class XxxDataLoaderTest {
 	
 	@Test
 	public void testLoad() {
-		XxxDataLoader loader = new XxxDataLoader();
+		JavaTest1 loader = new JavaTest1();
 		
 		//protectedのフィールドやメソッドに対しては、
 		//リフレクションなどを用いずに値の上書きや処理の呼び出しがおこなえる
